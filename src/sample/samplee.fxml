@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerE">
+   <top>
+      <VBox alignment="CENTER" spacing="10.0" styleClass="gridlane" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" spacing="2.0" styleClass="bar">
+               <children>
+                  <Button fx:id="btret" mnemonicParsing="false" onAction="#retBut" text="&lt;-" />
+                  <Label fx:id="lbtit" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btinfo" mnemonicParsing="false" onAction="#infoBut" />
+                  <Button mnemonicParsing="false" onAction="#propBut" text="( ? )" />
+                  <Region prefHeight="25.0" prefWidth="35.0" />
+                  <Button fx:id="btmin" mnemonicParsing="false" onAction="#minBut" text="_" />
+                  <Button fx:id="btcls" mnemonicParsing="false" onAction="#clsBut" text="X" />
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <Label text="Bienvenue Employé!">
+               <font>
+                  <Font name="Berlin Sans FB" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/group.png" />
+               </image>
+            </ImageView>
+            <Label text="Que voulez vous faire?">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox alignment="CENTER" styleClass="gridpane" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" />
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" BorderPane.alignment="CENTER" styleClass="gridpane">
+         <children>
+            <Button fx:id="btlistev" mnemonicParsing="false" onAction="#listEvBut" text="Evenements">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/event/listevent.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btlistproj" mnemonicParsing="false" onAction="#listProjBut" text="Projets">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/proj/listprojet.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btafftask" mnemonicParsing="false" onAction="#affTaskBut" text="Mes Taches">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/worker-of-construction-working-with-a-shovel-beside-material-pile.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button mnemonicParsing="false" text="Mon Group">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/group.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btlistdem" mnemonicParsing="false" onAction="#listDemBut" text="Liste des Demandes">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/copy.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btlistmat" mnemonicParsing="false" onAction="#listMatBut" text="Liste des Materielles">
+               <graphic>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+                     <image>
+                        <Image url="@../icon/barrow-with-construction-materials.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>

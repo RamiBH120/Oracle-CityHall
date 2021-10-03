@@ -1,0 +1,83 @@
+.root {
+
+    -fx-background-color:
+            linear-gradient(#005e80 0%, #66d6ff 50%, #66d6ff 70%, #005e80 100%);
+
+}
+.label{
+    -fx-text-alignment : center;
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+}
+.button{
+    -fx-text-fill:white;
+    -fx-font-family: "Helvetica";
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+
+    -fx-background-color:
+            linear-gradient(#00a8e6, #0096cc);
+}
+.button:hover{
+    -fx-background-color:
+            linear-gradient(#00bbff, #0083b3);
+}
+
+.combo-box{
+    -fx-text-fill:white;
+    -fx-font-family: "Helvetica";
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+
+    -fx-background-color:
+            linear-gradient(#00a8e6, #0096cc);
+}
+
+.combo-box:hover{
+    -fx-background-color:
+            linear-gradient(#00bbff, #0083b3);
+}
+
+.gridpane {
+    -fx-background-radius : 5px;
+    -fx-effect :  dropshadow(gaussian, rgba(0, 37, 51,0.5), 5, 0, 5, 5);
+    -fx-background-color :  linear-gradient(to bottom, #0096cc, #007099);
+}
+
+.banner{
+
+    -fx-background-radius : 15px;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-effect :  dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+    -fx-background-color :  linear-gradient(to left, rgb(0, 131, 179), rgb(0, 94, 128));
+}
+
+.msg{
+    -fx-background-radius : 15px;
+    -fx-effect :  dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+    -fx-background-color :  linear-gradient(#00a8e6, #0083b3);
+}
+
+.bar{
+    -fx-background-radius : 5px;
+    -fx-effect :  dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 5);
+    -fx-background-color :  linear-gradient(#0096cc, #005e80);
+}
+
+#btcls{
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+
+    -fx-background-color:
+            linear-gradient(#007099, #004b66);
+}
+#btcls:hover{
+    -fx-text-fill:white;
+    -fx-effect: dropshadow(three-pass-box, rgb(0, 75, 102), 5, 0, 0, 0);
+
+    -fx-background-color:
+            linear-gradient(#ff6666, #cc0000);
+}
+
+.img{
+    -fx-effect :  dropshadow(three-pass-box, rgb(128, 221, 255), 5, 0, 0, 0);
+}
